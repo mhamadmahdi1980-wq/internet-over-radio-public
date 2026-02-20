@@ -1,0 +1,73 @@
+{
+  "name": "📡 راديو البيانات - Data-Over-Radio",
+  "short_name": "راديو البيانات",
+  "description": "تطبيق ويب متقدم لاستقبال وتصفح البيانات عبر موجات FM بدون اتصال إنترنت",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0EA5E9",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect fill='%230EA5E9' width='192' height='192'/%3E%3Ctext x='50%' y='50%' font-size='120' dominant-baseline='middle' text-anchor='middle' font-family='Arial'%3E📡%3C/text%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect fill='%230EA5E9' width='512' height='512'/%3E%3Ctext x='50%' y='50%' font-size='320' dominant-baseline='middle' text-anchor='middle' font-family='Arial'%3E📡%3C/text%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["utilities", "productivity"],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 540 720'%3E%3Crect fill='%23f0f9ff' width='540' height='720'/%3E%3Ctext x='270' y='360' font-size='80' dominant-baseline='middle' text-anchor='middle' font-family='Arial' fill='%230EA5E9'%3E📡 راديو البيانات%3C/text%3E%3C/svg%3E",
+      "sizes": "540x720",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "البيانات المستقبلة",
+      "short_name": "الرسائل",
+      "description": "عرض الرسائل المستقبلة عبر الراديو",
+      "url": "/?tab=messages",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Ctext x='48' y='48' font-size='60' dominant-baseline='middle' text-anchor='middle'%3E📨%3C/text%3E%3C/svg%3E",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "المفضلة",
+      "short_name": "المفضلة",
+      "description": "عرض الرسائل المفضلة",
+      "url": "/?tab=favorites",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Ctext x='48' y='48' font-size='60' dominant-baseline='middle' text-anchor='middle'%3E❤️%3C/text%3E%3C/svg%3E",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "prefer_related_applications": false
+}
